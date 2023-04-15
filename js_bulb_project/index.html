@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BULB</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      .imgContainer {
+        display: grid;
+        place-content: center;
+      }
+      .imgContainer img {
+        width: 40vh;
+      }
+      .btnsContainer {
+        display: flex;
+        justify-content: space-around;
+        margin: auto;
+      }
+      .btnsContainer button {
+        font-size: 1.5rem;
+        padding: 1rem 2rem;
+        background-color: red;
+        border: 0.3rem solid black;
+        border-radius: 15px;
+      }
+      h1 {
+        padding: 1.5rem;
+        font-family: "Times New Roman", Times, serif;
+        color: rgb(27, 169, 27);
+        background-color: rgb(155, 82, 82);
+      }
+      .heading {
+        /* margin: auto; */
+        display: flex;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="heading">
+      <h1>BULB SWITCH ON / OFF</h1>
+    </div>
+
+    <div class="imgContainer"><img id="bulb" src="bulb-off.png" alt="" /></div>
+    <div class="btnsContainer">
+      <button onclick="SwitchOn()">ON</button>
+      <button onclick="SwitchOff()">OFF</button>
+    </div>
+    <script>
+      function SwitchOn() {
+        // document.getElementById(bulb).setAttribute(src, "bulb-on.png");
+        document.getElementById("bulb").src = "bulb-on.png";
+      }
+      function SwitchOff() {
+        // document.getElementById(bulb).setAttribute(src, "bulb-ff.png");
+        document.getElementById("bulb").src = "bulb-off.png";
+      }
+    </script>
+  </body>
+</html>
