@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.heading{
+    text-align: center;
+    background-color: green;
+    font-size: 3rem;
+    font-weight: 500;
+}
+.clockContainer{
+    background: url(clock1.jpg) no-repeat ;
+    background-size: 100%;
+
+    height: 80vh;
+    width: 80vh;
+    /* height: 450px;
+    width: 450px; */
+    position: relative;
+    margin: auto;
+    /* background-position: center; */
+}
+#hr, #min , #sec{
+    position: absolute;
+    background-color: black;
+    border-radius: 2rem;
+    transform-origin: bottom ;
+
+}
+#hr{
+    width: 3%;
+    height: 18%;
+    position: absolute;
+    top: 33%;
+    left: 49%;
+    /* display: none; */
+}
+#min{
+    width: 2%;
+    height: 22%;
+    position: absolute;
+    top: 27%;
+    left: 49.5%;
+    /* display: none; */
+}
+#sec{
+    width: 1%;
+    height: 24%;
+    position: absolute;
+    top: 25%;
+    left: 49.8%;
+    /* display: none; */
+}
+#time{
+    font-family: 'Nova Square', cursive;
+    margin: auto;
+    background-color: black;
+    color: red;
+    font-size: 3rem;
+    padding : 0.5rem 2rem;
+    border-radius: 50%;
+}
+.timecontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 0.5rem; */
+    margin: auto;
+}
